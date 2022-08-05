@@ -44,7 +44,7 @@ class BookController extends Controller
         $input = $request->all();
         $validator = Validator::make($input, [
             "name" => "required|min:4",
-            "description" => "required|min:3|max:300",
+            "description" => "required|min:4|max:300",
             "proce" => "required"
         ]);
 
